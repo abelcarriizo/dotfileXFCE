@@ -1,6 +1,6 @@
 # My first dotfileXFCE
 
-##Previews
+## Previews
 ![Main Preview](previews/main_preview.png)
 ![Main Preview](previews/window_preview.png)
 
