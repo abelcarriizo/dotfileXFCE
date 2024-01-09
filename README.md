@@ -62,3 +62,5 @@ sudo cp -R Papirus* /usr/share/icons/
 "Tipo de Letra": Noto Sans Regular 10
 "Fondo de Pantalla":
 - "Color": #232a2d
+
+Ahora Cerrar Sesion para ver los cambios
