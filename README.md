@@ -48,13 +48,17 @@ Kvantum Manager
 
 En este punto puedes cerrar sesion para chequear los cambios 
 
+# Configuracion LightDM 
+1. Acceder al siguiente directorio "~/.themes" y luego aplicar los siguientes comandos:
+sudo cp -R Everblush /usr/share/themes
 
+2. Acceder al siguiente directorio y luego aplicar los siguientes comandos:
+sudo cp -R Zafiro-Icons-* /usr/share/icons/
+sudo cp -R Papirus* /usr/share/icons/
 
-
-
-
-
-
- 
-
-
+3. Acceder a la aplicacion "Configuracion de la interfaz GTK+ de LightDM" desde el menu y luego seleccionar:
+"Tema": Everblush
+"Iconos": Papirus-Dark 
+"Tipo de Letra": Noto Sans Regular 10
+"Fondo de Pantalla":
+- "Color": #232a2d
