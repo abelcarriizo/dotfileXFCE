@@ -5,6 +5,7 @@
 ![Main Preview](previews/window_preview.png)
 
 Clonar este repositorio en el tu directorio dentro de home, es decir, /home/<tu_usuario>
+git clone https://github.com/abelcarriizo/dotfileXFCE.git
 
 # Instalacion inicial:
 sudo apt install mughshot xfce4-terminal
@@ -14,7 +15,7 @@ Establecer la terminal de xfce4-terminal como predeterminada ingresando en la ap
 # Instalar kvantum theme 
 sudo apt install qt5-style-kvantum qt5-style-kvantum-themes
 
-# Personalizacion
+# Cambiar tema, iconos, fuentes...
 Luego de haber realizado los pasos anteriores accederas a la aplicacion de Configuracion y realizaras lo siguiente:
 
 Tema
@@ -63,4 +64,18 @@ sudo cp -R Papirus* /usr/share/icons/
 "Fondo de Pantalla":
 - "Color": #232a2d
 
-Ahora Cerrar Sesion para ver los cambios
+Ahora Cerrar Sesion para ver los cambios.
+
+# Instalacion Picom
+
+Dependencias:
+sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson libxcb-util1 libxcb-util-dev libxcb-dpms0 libxcb-dpms0-dev
+
+Clonar el siguiente repositorio (preferentemente en el directorio ~/Descargas):
+git clone https://github.com/yshui/picom
+
+Luego utilizar los siguientes comandos:
+- git submodule update --init --recursive
+- meson --buildtype=release . build
+- ninja -C build
+- ninja -C build install
