@@ -4,6 +4,7 @@
 ![Main Preview](previews/main_preview.png)
 ![Main Preview](previews/window_preview.png)
 
+IMPORTANTE
 Clonar este repositorio en el tu directorio dentro de home, es decir, /home/<tu_usuario>
 git clone https://github.com/abelcarriizo/dotfileXFCE.git
 
@@ -79,3 +80,27 @@ Luego utilizar los siguientes comandos:
 - meson --buildtype=release . build
 - ninja -C build
 - ninja -C build install
+
+Desactivar compositor actual siguiendo estos pasos:
+Acceder a la aplicacion "Configuracion" - "Ajustes del Gestor de Ventas" - "Compositor" y luego desactivar
+la opcion "Activar composicion de visualizacion"
+
+Iniciar Picom
+Para hacer que nuestro nuevo compositor inicie junto con el sistema es importante realizar los siguientes pasos:
+Acceder a la aplicacion: "Sesion e Inicio" - "Autoarranque de aplicaciones"y seleccionar "+" para añadir picom. A continuacion se describe que colocar en cada seccion:
+"Nombre": Picom Startup
+"Descripcion": Picom Compositor
+"Orden": picom
+"Desencadenar": on login
+
+Ahora Cerrar Sesion para ver los cambios.
+
+# Instalar y Personalizar Neofetch
+Para instalar neofetch debes utilizar el siguiente comando:
+sudo apt install neofetch
+
+Ahora vamos a configurarlo. Accederemos al archivo de configuracion a traves del siguiente directorio: "~/.config/neofetch/config.conf". Ahora accedemos al archivo desde el editor que tu elijas y nos direccionaremos a la linea de codigo que se encuentra en la seccion de "Backend Settings" que es esta:
+
+image_source="/home/"usuario"/.config/neofetch/idk.txt"
+
+Reemplazaremos "usuario" por el nombre de tu usuario y luego guardaremos y cerraremos el archivo.
