@@ -1,0 +1,38 @@
+<svg id="svg392" version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <defs id="defs354">
+        <style id="style338" type="text/css"/>
+        <style id="style340" type="text/css"/>
+        <style id="style342" type="text/css"/>
+        <style id="style344" type="text/css"/>
+        <filter id="filter1057" x="-.026999999" y="-.026999999" width="1.054" height="1.054" color-interpolation-filters="sRGB">
+            <feGaussianBlur id="feGaussianBlur346" stdDeviation="0.61875"/>
+        </filter>
+        <filter id="filter8373" x="-.075" y="-.075" width="1.15" height="1.15" color-interpolation-filters="sRGB">
+            <feFlood id="feFlood8363" flood-color="rgb(191,191,191)" flood-opacity=".698039" result="flood"/>
+            <feComposite id="feComposite8365" in="flood" in2="SourceGraphic" operator="out" result="composite1"/>
+            <feGaussianBlur id="feGaussianBlur8367" in="composite1" result="blur" stdDeviation="1"/>
+            <feOffset id="feOffset8369" dx="0" dy="0" result="offset"/>
+            <feComposite id="feComposite8371" in="offset" in2="SourceGraphic" operator="in" result="composite2"/>
+        </filter>
+    </defs>
+    <rect id="rect356" x="4.5" y="4.5" width="55" height="55" ry="15" fill="#1e2326" filter="url(#filter1057)" opacity=".3" stroke-linecap="round" stroke-width="2.7444"/>
+    <rect id="rect358" x="4.5" y="4.5" width="55" height="55" ry="15" stroke-linecap="round" stroke-width="2.7444"/>
+    <g fill="#495156">
+        <g id="g368">
+            <circle id="circle360" cx="-1362.1" cy="-1209" r="0"/>
+            <circle id="circle362" cx="-262.53" cy="56.464" r="0" fill-rule="evenodd"/>
+            <circle id="circle364" cx="-1248.7" cy="-1241.6" r="0"/>
+            <circle id="circle366" cx="-149.15" cy="23.855" r="0" fill-rule="evenodd"/>
+        </g>
+        <circle id="circle388" cx="-1314.2" cy="-1241.6" r="0"/>
+        <circle id="circle390" cx="-214.7" cy="23.855" r="0" fill-rule="evenodd"/>
+    </g>
+    <g id="g7873" transform="matrix(.96363636 0 0 .96363636 1.1636365 1.1636365)" fill-rule="evenodd" stroke-width=".801796">
+        <path id="rect6863" d="m19.5 4.5c-8.309992 0-15 6.690008-15 15v12.5h27.5v-27.5z" fill="#a7c080"/>
+        <path id="rect6865" d="m32 4.5v27.5h27.5v-12.5c0-8.309992-6.690008-15-15-15z" fill="#83c092"/>
+        <path id="rect6867" d="m4.5 32v12.5c0 8.309992 6.690008 15 15 15h12.5v-27.5z" fill="#83c092"/>
+        <path id="rect6869" d="m32 32v27.5h12.5c8.309992 0 15-6.690008 15-15v-12.5z" fill="#83c092"/>
+    </g>
+    <path id="path6315" d="m16 16v10.472222h10.472222v-10.472222h-5.236111zm21.461805 0v10.472222h10.473959l0.0243-5.236111 0.039936-5.236111h-5.262153zm-10.730902 10.730903-0.02604 2.677083-0.03819 2.689236-2.611111 0.0382-2.625 0.02604v15.774305h5.041666l0.02604-2.625 0.0382-2.611112 5.470485-0.03993 5.454861-0.02604v5.366315h5.171876v-15.838541h-5.300357v-5.430556h-5.300347z" stroke-width=".00326531"/>
+    <path id="path8049" d="m16 16v10.472222h10.472222v-10.472222h-5.236111zm21.461805 0v10.472222h10.473959l0.0243-5.236111 0.039936-5.236111h-5.262153zm-10.730902 10.730903-0.02604 2.677083-0.03819 2.689236-2.611111 0.0382-2.625 0.02604v15.774305h5.041666l0.02604-2.625 0.0382-2.611112 5.470485-0.03993 5.454861-0.02604v5.366315h5.171876v-15.838541h-5.300357v-5.430556h-5.300347z" filter="url(#filter8373)" stroke-width=".00326531"/>
+</svg>
