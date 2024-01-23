@@ -23,9 +23,9 @@ Establecer la terminal xfce4-terminal como predeterminada: Configuración -> Apl
 sudo apt install qt5-style-kvantum qt5-style-kvantum-themes
 ```
 
-### Importante: Estructura de Carpetas
+> [!IMPORTANTE]
+> La estructura de carpetas en el repositorio refleja la estructura que se espera en tu directorio home. Debes copiar o cortar el contenido del repositorio y pegarlo directamente en tu directorio home (`/home/tu_usuario`).
 
-La estructura de carpetas en el repositorio refleja la estructura que se espera en tu directorio home. Debes copiar o cortar el contenido del repositorio y pegarlo directamente en tu directorio home (`/home/tu_usuario`).
 
 ### Cambiar Tema, Iconos, Fuentes, etc.
 
@@ -56,7 +56,7 @@ Accede a la aplicación de Configuración y realiza los siguientes pasos:
 6. **Kvantum Manager:**
    - Cambiar/Borrar tema: Seleccionar tema Everblush
 
-**Cerrar sesión para aplicar los cambios.**
+> [!CERRAR SESION]
 
 ### Configuración LightDM
 
@@ -80,7 +80,7 @@ sudo cp -R Papirus* /usr/share/icons/
    - Fondo de Pantalla:
       - Color: #232a2d
 
-**Cerrar sesión para ver los cambios.**
+> [!CERRAR SESION]
 
 ### Instalación Picom
 
@@ -116,7 +116,7 @@ Añade Picom al inicio del sistema:
    - Orden: picom
    - Desencadenar: al iniciar sesión
 
-Cerrar sesión para ver los cambios.
+> [!CERRAR SESION]
 
 ### Instalar y Personalizar Neofetch
 Continuemos con la última parte:
