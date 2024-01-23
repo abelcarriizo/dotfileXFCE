@@ -1,160 +1,163 @@
-# Mi Primer dotfiles
+***Language***
+- [🇪🇸 Español](./README.es.md)
+- 🇺🇸 English
 
-## Tabla de Contenidos
+# My First Dotfiles
+
+## Table of Contents
 - [Previews](#previews)
-- [Clonar Repositorio](#clonar-repositorio)
-- [Instalación Inicial](#instalación-inicial)
-  - [Cambiar Tema, Iconos, Fuentes, etc.](#cambiar-tema-iconos-fuentes-etc)
-  - [Configuración LightDM](#configuración-lightdm)
-- [Instalación Picom](#instalación-picom)
-  - [Dependencias](#dependencias)
-  - [Iniciar Picom](#iniciar-picom)
-- [Instalar y Personalizar Neofetch](#instalar-y-personalizar-neofetch)
+- [Clone Repository](#clone-repository)
+- [Initial Installation](#initial-installation)
+  - [Change Theme, Icons, Fonts, etc.](#change-theme-icons-fonts-etc)
+  - [LightDM Configuration](#lightdm-configuration)
+- [Picom Installation](#picom-installation)
+  - [Dependencies](#dependencies)
+  - [Start Picom](#start-picom)
+- [Install and Customize Neofetch](#install-and-customize-neofetch)
 
 
 ## Previews
 ![Main Preview](previews/main_preview.png)
 ![Window Preview](previews/window_preview.png)
 
-## Clonar Repositorio
-Para clonar este repositorio en tu directorio home, utiliza el siguiente comando:
+## Clone Repository
+To clone this repository to your home directory, use the following command:
 
 ```bash
 git clone https://github.com/abelcarriizo/dotfileXFCE.git ~/dotfiles
 ```
 
-## Instalación Inicial
+## Initial Installation
 
 ```bash
 sudo apt install mughshot xfce4-terminal
 ```
 
-Establecer la terminal xfce4-terminal como predeterminada: Configuración -> Aplicaciones Predeterminadas.
+Set xfce4-terminal as the default terminal: Settings -> Default Applications.
 
 ```bash
 sudo apt install qt5-style-kvantum qt5-style-kvantum-themes
 ```
 
 > [!CAUTION]
-> La estructura de carpetas en el repositorio refleja la estructura que se espera en tu directorio home. Debes copiar o cortar el contenido del repositorio y pegarlo directamente en tu directorio home (`/home/tu_usuario`).
+> The folder structure in the repository reflects the expected structure in your home directory. You should copy or cut the contents of the repository and paste it directly into your home directory (`/home/your_user`).
 
+### Change Theme, Icons, Fonts, etc.
 
-### Cambiar Tema, Iconos, Fuentes, etc.
+Access the Settings application and follow these steps:
 
-Accede a la aplicación de Configuración y realiza los siguientes pasos:
+#### Theme
+1. **Appearance -> Style:** Everblush_GTK_THEME
 
-#### Tema
-1. **Apariencia -> Estilo:** Everblush_GTK_THEME
+#### Icons
+2. **Appearance -> Icons:** Zafiro-icons-Dark
 
-#### Iconos
-2. **Apariencia -> Iconos:** Zafiro-icons-Dark
+#### Font
+3. **Appearance -> Fonts:**
+   - Default font: Iosevka Nerd Font Regular, size 10
+   - Default monospace font: JetbrainsMono Nerd Font Mono Regular, size 10
 
-#### Fuente
-3. **Apariencias -> Letra:**
-   - Tipografía predeterminada: Iosevka Nerd Font Regular, tamaño 10
-   - Tipografía monoespaciada predeterminada: JetbrainsMono Nerd Font Mono Regular, tamaño 10
+#### Window Manager
+4. **Window Manager:**
+   - Theme: Everblush-xfwm
+   - Title font: Iosevka Nerd Font Regular, size 9
+   - Title alignment: Left
 
-#### Gestor de Ventanas
-4. **Gestor de Ventanas:**
-   - Tema: Everblush-xfwm
-   - Tipografía del título: Iosevka Nerd Font Regular, tamaño 9
-   - Alineación del título: Izquierda
-
-#### Ratón y Panel Táctil
-5. **Ratón y Panel Táctil:**
-   - Tema: Radioactive-nord
+#### Mouse and Touchpad
+5. **Mouse and Touchpad:**
+   - Theme: Radioactive-nord
 
 #### Kvantum Manager
 6. **Kvantum Manager:**
-   - Cambiar/Borrar tema: Seleccionar tema Everblush
+   - Change/Delete theme: Select Everblush theme
 
 > [!NOTE]
-> Cerrar Sesion para ver los cambios.
+> Logout to see the changes.
 
-### Configuración LightDM
+### LightDM Configuration
 
-1. Accede al directorio `~/.themes` y ejecuta:
+1. Go to the `~/.themes` directory and run:
 
 ```bash
 sudo cp -R Everblush /usr/share/themes
 ```
 
-2. Accede al siguiente directorio y ejecuta:
+2. Go to the following directory and run:
 
 ```bash
 sudo cp -R Zafiro-Icons-* /usr/share/icons/
 sudo cp -R Papirus* /usr/share/icons/
 ```
 
-3. Abre la aplicación "Configuración de la interfaz GTK+ de LightDM" desde el menú y selecciona:
-   - Tema: Everblush
-   - Iconos: Papirus-Dark 
-   - Tipo de Letra: Noto Sans Regular 10
-   - Fondo de Pantalla:
+3. Open the "GTK+ Interface Configuration" application from the menu and select:
+   - Theme: Everblush
+   - Icons: Papirus-Dark 
+   - Font: Noto Sans Regular 10
+   - Wallpaper:
       - Color: #232a2d
 
 > [!NOTE]
-> Cerrar Sesion para ver los cambios.
+> Logout to see the changes.
 
-### Instalación Picom
+### Picom Installation
 
-#### Dependencias
+#### Dependencies
 
 ```bash
 sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson libxcb-util1 libxcb-util-dev libxcb-dpms0 libxcb-dpms0-dev
 ```
 
-Clonar el repositorio Picom en el directorio preferido (ej. `~/Descargas`):
+Clone the Picom repository in your preferred directory (e.g., `~/Downloads`):
 
 ```bash
 git clone https://github.com/yshui/picom
 ```
 
-Ejecuta los siguientes comandos para compilar e instalar:
+Run the following commands to compile and install:
 
 ```bash
-cd ~/Descargas/picom
+cd ~/Downloads/picom
 git submodule update --init --recursive
 meson --buildtype=release . build
 ninja -C build
 ninja -C build install
 ```
 
-Desactiva el compositor actual en "Configuración" -> "Ajustes del Gestor de Ventanas" -> "Compositor" y desactiva "Activar composición de visualización".
+Disable the current compositor in "Settings" -> "Window Manager Tweaks" -> "Compositor" and uncheck "Enable display compositing."
 
-#### Iniciar Picom
+#### Start Picom
 
-Añade Picom al inicio del sistema:
-   - Nombre: Picom Startup
-   - Descripción: Picom Compositor
-   - Orden: picom
-   - Desencadenar: al iniciar sesión
+Add Picom to the system startup:
+   - Name: Picom Startup
+   - Description: Picom Compositor
+   - Command: picom
+   - Trigger: On login
 
 > [!NOTE]
-> Cerrar Sesion para ver los cambios.
+> Logout to see the changes.
 
-### Instalar y Personalizar Neofetch
-Continuemos con la última parte:
+### Install and Customize Neofetch
+Let's proceed with the final part:
 
-Para instalar Neofetch, utiliza el siguiente comando:
+To install Neofetch, use the following command:
 
 ```bash
 sudo apt install neofetch
 ```
 
-Ahora, personalicemos la configuración de Neofetch. Accede al archivo de configuración a través de la siguiente ruta: `~/.config/neofetch/config.conf`. Utiliza tu editor de texto favorito para abrir el archivo y dirígete a la línea de código en la sección "Backend Settings" que se ve así:
+Now, let's customize the Neofetch configuration. Access the configuration file through the following path: `~/.config/neofetch/config.conf`. Use your favorite text editor to open the file and go to the line of code in the "Backend Settings" section that looks like this:
 
 ```bash
-image_source="/home/tu_usuario/.config/neofetch/idk.txt"
+image_source="/home/your_user/.config/neofetch/idk.txt"
 ```
 
-Reemplaza "tu_usuario" con el nombre de tu usuario y guarda los cambios.
+Replace "your_user" with your username and save the changes.
 
-Esta configuración asegura que Neofetch obtenga la imagen desde la ubicación correcta.
+This configuration ensures that Neofetch gets the image from the correct location.
 
-¡Listo! Ahora deberías tener Neofetch instalado y personalizado según tus preferencias.
+All set! Now you should have Neofetch installed and customized according to your preferences.
 
 ---
-Recuerda que este es un conjunto inicial de configuraciones y puedes ajustarlo según tus preferencias personales. ¡Disfruta de tu configuración personalizada de dotfiles en XFCE!
+Remember, this is an initial set of configurations, and you can adjust it to your personal preferences. Enjoy your customized dotfiles setup in XFCE!
 
-¡Espero que encuentres útil esta documentación!
+I hope you find this documentation helpful!
