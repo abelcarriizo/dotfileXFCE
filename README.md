@@ -1,5 +1,17 @@
 # Mi Primer dotfiles
 
+## Tabla de Contenidos
+- [Previews](#previews)
+- [Clonar Repositorio](#clonar-repositorio)
+- [Instalación Inicial](#instalación-inicial)
+  - [Cambiar Tema, Iconos, Fuentes, etc.](#cambiar-tema-iconos-fuentes-etc)
+  - [Configuración LightDM](#configuración-lightdm)
+- [Instalación Picom](#instalación-picom)
+  - [Dependencias](#dependencias)
+  - [Iniciar Picom](#iniciar-picom)
+- [Instalar y Personalizar Neofetch](#instalar-y-personalizar-neofetch)
+
+
 ## Previews
 ![Main Preview](previews/main_preview.png)
 ![Window Preview](previews/window_preview.png)
@@ -23,7 +35,7 @@ Establecer la terminal xfce4-terminal como predeterminada: Configuración -> Apl
 sudo apt install qt5-style-kvantum qt5-style-kvantum-themes
 ```
 
-> [!IMPORTANTE]
+> [!CAUTION]
 > La estructura de carpetas en el repositorio refleja la estructura que se espera en tu directorio home. Debes copiar o cortar el contenido del repositorio y pegarlo directamente en tu directorio home (`/home/tu_usuario`).
 
 
@@ -56,7 +68,8 @@ Accede a la aplicación de Configuración y realiza los siguientes pasos:
 6. **Kvantum Manager:**
    - Cambiar/Borrar tema: Seleccionar tema Everblush
 
-> [!CERRAR SESION]
+> [!NOTE]
+> Cerrar Sesion para ver los cambios.
 
 ### Configuración LightDM
 
@@ -80,7 +93,8 @@ sudo cp -R Papirus* /usr/share/icons/
    - Fondo de Pantalla:
       - Color: #232a2d
 
-> [!CERRAR SESION]
+> [!NOTE]
+> Cerrar Sesion para ver los cambios.
 
 ### Instalación Picom
 
@@ -90,7 +104,7 @@ sudo cp -R Papirus* /usr/share/icons/
 sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson libxcb-util1 libxcb-util-dev libxcb-dpms0 libxcb-dpms0-dev
 ```
 
-Clona el repositorio Picom en el directorio preferido (ej. `~/Descargas`):
+Clonar el repositorio Picom en el directorio preferido (ej. `~/Descargas`):
 
 ```bash
 git clone https://github.com/yshui/picom
@@ -116,7 +130,8 @@ Añade Picom al inicio del sistema:
    - Orden: picom
    - Desencadenar: al iniciar sesión
 
-> [!CERRAR SESION]
+> [!NOTE]
+> Cerrar Sesion para ver los cambios.
 
 ### Instalar y Personalizar Neofetch
 Continuemos con la última parte:
